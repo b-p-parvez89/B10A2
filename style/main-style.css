@@ -1,0 +1,266 @@
+/* multipul classes style */
+.main-button{
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color:#E6533C;
+    color: white;
+    border: none;
+}
+.header-buttons{
+    display: flex;
+    justify-content: start;
+
+}
+.button{
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid #FFFFFF;
+
+}
+
+
+*{
+    background-color: black;
+    color: #f8f8f8;
+}
+
+/* Font class styles */
+/* inter font */
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+
+.dancing-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Maima';
+    src: url('../font/Miama.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* header tag styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 190px;
+}
+nav .title{
+    font-size: 2.25em;
+    font-weight: bolder;
+    font-style: italic;
+    color: #E6533C;
+}
+
+
+
+.menu-bar{
+    width: 29em;
+    height: 2.8em;
+    display: flex;  
+    justify-content: space-around;
+    border: 1px solid #FFFFFF1A;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+
+}
+ li{
+    list-style: none;
+    display: flex;
+    text-align: center;   
+}
+
+nav  li a{
+    text-decoration: none;
+    padding: 8px 30px;
+    font-weight: 400;
+        font-weight: 18px;
+}
+
+
+nav li a:hover{
+    background-color: #E6533C;
+    border-radius: 20px;
+}
+
+
+/* header text */
+
+.header-section{
+    display: flex;
+    margin: 10px auto;
+    justify-content: space-evenly;
+    flex-direction: row;   
+}
+
+.header-text{
+    width: 520px;
+    margin-top: 70px;
+}
+
+.header-title{
+    color:white;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 93.6px;
+    padding: 0;
+    margin: 0;
+}
+.header-title span{
+    font-size: 78px;
+    font-weight:400 ;
+    max-height: 93.6px;
+    position:sticky;
+    font-family:Maima ;
+}
+.header-des{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+}
+.download-app-button{
+ margin-left: 20px; 
+ }
+
+ /* Left Section */
+#images{
+    height: 580px;
+    width: 349px;
+    background-image: url("../images/images 2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* height: 100%; */
+    position: relative;
+    
+}
+.position{
+    background-color: lightblue;
+    position: absolute;
+    
+}
+.position-1{
+background-color: rgba(255, 255, 255, 0.351);
+position: absolute;
+top: 170px;
+right: -50px;
+padding: 10px 10px;
+border-radius: 10px;
+}
+
+.position-1 h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2em;  
+}
+.position p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.position-2{
+    background-color: rgba(255, 255, 255, 0.351);
+    position: absolute;
+    display: flex;
+    bottom: 80px;
+    left: -40px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    background-color: #E6533C;
+}
+
+.position-text h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-weight: bolder;  
+}
+.position-text p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+#images h3, p{
+background-color: transparent;
+}
+
+
+
+
+
+
+/* body OR main section style */
+
+
+/* footer section style */
+
+
+/* MEDIA QUARY */
+
+/* medium devices media quary styles  */
+@media screen and (min-width:768px) and (max-width:1023px){
+    nav{
+        margin: 0 10vw;
+    }
+    
+    .header-section{
+    flex-direction: column;
+    margin-left: 10vw;
+        
+    }  
+    #images{
+      margin: auto;
+    }
+
+}
+
+/* small devices media quary styles */
+
+@media screen and (max-width:767px){
+    nav{
+        margin: 0 10vw;
+    }
+    .header-title{
+        font-size: 48px;
+    }
+    .menu-bar{
+        display: none;
+    }
+    .header-text{
+        width: 352px;
+    }
+    .header-section{
+        flex-direction: column;
+        margin-left: 10vw;
+    }
+    #images{
+        margin: auto;
+    }
+}
