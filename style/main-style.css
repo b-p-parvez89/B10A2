@@ -1,28 +1,4 @@
-/* multipul classes style */
-.main-button{
-    border-radius: 50px;
-    padding: 10px 30px;
-    background-color:#E6533C;
-    color: white;
-    border: none;
-}
-.header-buttons{
-    display: flex;
-    justify-content: start;
 
-}
-.button{
-    border-radius: 50px;
-    padding: 10px 30px;
-    border: 1px solid #FFFFFF;
-
-}
-
-
-*{
-    background-color: black;
-    color: #f8f8f8;
-}
 
 /* Font class styles */
 /* inter font */
@@ -50,7 +26,39 @@
     font-weight: normal;
     font-style: normal;
 }
+ @import url('https://fonts.cdnfonts.com/css/miama');
 
+                
+/* multipul classes style */
+.main-button{
+    border-radius: 50px;
+    padding: 10px 30px;
+    background-color:#E6533C;
+    color: white;
+    border: none;
+}
+.header-buttons{
+    display: flex;
+    justify-content: start;
+
+}
+.button{
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid #FFFFFF;
+
+}
+
+
+*{
+    background-color: black;
+    color: #f8f8f8;
+}
+.all-titles{
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+}
 /* header tag styles */
 
 nav{
@@ -97,7 +105,9 @@ nav li a:hover{
     background-color: #E6533C;
     border-radius: 20px;
 }
-
+.menu-bar-icons{
+    display: none;
+}
 
 /* header text */
 
@@ -126,8 +136,9 @@ nav li a:hover{
     font-weight:400 ;
     max-height: 93.6px;
     position:sticky;
-    font-family:Maima ;
+    font-family:'Miama', sans-serif;
 }
+
 .header-des{
 font-size: 16px;
 font-weight: 400;
@@ -210,12 +221,6 @@ border-radius: 10px;
 #images h3, p{
 background-color: transparent;
 }
-
-
-
-
-
-
 /* body OR main section style */
 
 
@@ -237,6 +242,10 @@ background-color: transparent;
     }  
     #images{
       margin: auto;
+      margin-top: 60px;
+    }
+    .menu-bar-icons{
+        display: none;
     }
 
 }
@@ -253,6 +262,9 @@ background-color: transparent;
     .menu-bar{
         display: none;
     }
+    .menu-bar-icons{
+        display: flex;
+    }
     .header-text{
         width: 352px;
     }
@@ -262,5 +274,6 @@ background-color: transparent;
     }
     #images{
         margin: auto;
+        margin-top: 70px;
     }
 }
