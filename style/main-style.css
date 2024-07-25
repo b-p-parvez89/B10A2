@@ -28,7 +28,10 @@
 }
  @import url('https://fonts.cdnfonts.com/css/miama');
 
-                
+  
+ 
+/* Universall */
+
 /* multipul classes style */
 .main-button{
     border-radius: 50px;
@@ -40,6 +43,7 @@
 .header-buttons{
     display: flex;
     justify-content: start;
+    background-color: transparent;
 
 }
 .button{
@@ -58,20 +62,37 @@
     color: white;
     font-size: 48px;
     font-weight: 900;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+.all-subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
 }
 /* header tag styles */
+
+header{
+    /* background: linear-gradient(right, #111111 0%, rgba(119, 119, 119, 0) 100%); */
+background-image: linear-gradient( #7777 0%, #000000 );
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 190px;
+    background-color: transparent;
 }
 nav .title{
     font-size: 2.25em;
     font-weight: bolder;
     font-style: italic;
     color: #E6533C;
+    background-color: transparent;
 }
 
 
@@ -85,12 +106,14 @@ nav .title{
     border-radius: 50px;
     text-align: center;
     align-items: center;
+    background-color: transparent;
 
 }
  li{
     list-style: none;
     display: flex;
-    text-align: center;   
+    text-align: center; 
+    background-color: transparent;  
 }
 
 nav  li a{
@@ -98,6 +121,7 @@ nav  li a{
     padding: 8px 30px;
     font-weight: 400;
         font-weight: 18px;
+        background-color: transparent;
 }
 
 
@@ -115,21 +139,26 @@ nav li a:hover{
     display: flex;
     margin: 10px auto;
     justify-content: space-evenly;
-    flex-direction: row;   
+    flex-direction: row; 
+    background-color: transparent;  
+   
+   
 }
 
 .header-text{
     width: 520px;
     margin-top: 70px;
+    background-color: transparent;
 }
 
 .header-title{
     color:white;
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: 900;
     line-height: 93.6px;
     padding: 0;
     margin: 0;
+    background-color: transparent;
 }
 .header-title span{
     font-size: 78px;
@@ -137,6 +166,7 @@ nav li a:hover{
     max-height: 93.6px;
     position:sticky;
     font-family:'Miama', sans-serif;
+    background-color: transparent;
 }
 
 .header-des{
@@ -145,6 +175,7 @@ font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.5px;
 text-align: left;
+background-color: transparent;
 }
 .download-app-button{
  margin-left: 20px; 
@@ -159,10 +190,11 @@ text-align: left;
     background-size: contain;
     /* height: 100%; */
     position: relative;
+    background-color: transparent;
     
 }
 .position{
-    background-color: lightblue;
+    background-color: transparent;
     position: absolute;
     
 }
@@ -222,6 +254,89 @@ border-radius: 10px;
 background-color: transparent;
 }
 /* body OR main section style */
+/* Habite-section */
+.habits{
+    text-align: center;
+    margin: 0 0;
+    margin-top: 100px;
+  
+}
+.habits-container{
+    padding: 10px 130px;
+    display: flex;
+    margin: 70px 30px;
+    text-align: center;
+}
+.habits-container h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0;
+    padding: 0;
+    margin-top: 30px;
+    
+}
+.habits-container p{
+    font-size: 16px;
+    margin: 0 30px;
+    padding: 0;
+    color: #f8f8f88f;
+    
+}
+.habits-container .image img{
+height: 150px;
+width: 150px;
+border-radius: 100%;
+background-image: url("../images/image 3.png");
+}
+
+
+/* Habbits 2 Section */
+.habbits-2{
+  margin:  150px 190px;
+  padding-bottom: 50px;
+   background-color: #7777;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+  
+
+}
+
+.run-extra-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: transparent;
+    width: 40%;
+    margin:20px 50px;
+    height: 100%;  
+   
+}
+
+.run-extra-text h2{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+.join-now-button{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.habbits-2-image{
+  height: auto;
+  width: 250px;
+  border-radius: 20px;
+  margin: 20px;
+}
+.training{
+    margin: 0 190px;
+}
+.image-collage .row-1{
+    display: flex;
+    justify-content: center;
+}
 
 
 /* footer section style */
@@ -231,8 +346,14 @@ background-color: transparent;
 
 /* medium devices media quary styles  */
 @media screen and (min-width:768px) and (max-width:1023px){
+   
+   body{
+    padding: 0;
+    margin: 0;
+   }
     nav{
         margin: 0 10vw;
+        padding: 0;
     }
     
     .header-section{
@@ -247,7 +368,14 @@ background-color: transparent;
     .menu-bar-icons{
         display: none;
     }
-
+    .habits-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       gap: 100px;
+    }
+.habbits-2{
+    margin: 10px;
+}
 }
 
 /* small devices media quary styles */
@@ -255,6 +383,10 @@ background-color: transparent;
 @media screen and (max-width:767px){
     nav{
         margin: 0 10vw;
+    }
+    header{
+        
+        width: 100%;
     }
     .header-title{
         font-size: 48px;
@@ -264,6 +396,7 @@ background-color: transparent;
     }
     .menu-bar-icons{
         display: flex;
+        background-color: transparent;
     }
     .header-text{
         width: 352px;
@@ -276,4 +409,45 @@ background-color: transparent;
         margin: auto;
         margin-top: 70px;
     }
+    .habits-container{
+        display: block;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    .all-titles{
+        font-size: 48px;
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+    .habits-container h3{
+        font-size: 24px;
+    }
+    .habits-container p{
+        
+        font-size: 16px;
+        margin: 0 30px;
+        margin-bottom: 50px;
+    }
+.habbits-2{
+    display: flex;
+    flex-direction: column;
+  
+    margin: 15px;
+    
+}
+.run-extra-text{
+    width: 100%;
+    margin: 20px;
+
+}
+.run-extra-text h2{
+    font-size: 42px;
+}
+.habbits-2-image{
+    width: 90%
+}
+.join-now-button{
+    width: 90%;
+}
 }
